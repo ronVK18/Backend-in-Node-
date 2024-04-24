@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-mono">
+    <div class="main p-10 w-full min-h-screen bg-zinc-900 text-white">
+        <a class="text-blue-600" href="/">Go back to home </a>
+        <form action="/edit" method="post">
+            <input class="text-gray-600 block w-1/4 rounded-lg mb-3 outline-none px-5 py-3 bg-zinc-800" type="text"
+                placeholder="Title goes here ...." required name="prev" value=<%= prev %>                          />
+            <input type="text" name="new" required
+                class="block w-1/4 rounded-lg mb-3 outline-none px-5 py-3 bg-zinc-800 resize-none"
+                placeholder="Enter new name"></input>
+            <input class="mt-2 bg-yellow-600 px-5 py-2 rounded-md" type="submit" value="Rename" />
+        </form>
+    </div>
+</body>   
+
+</html>
